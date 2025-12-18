@@ -114,27 +114,33 @@ export default function Home() {
       </div>
 
       <div className="py-5">
-        <SliderNormal title= 'รายการของฉัน' data={normalRow1}/>
+        <div className="pl-[5%] mb-3"><p className="text-white">รายการของฉัน</p></div>
+        <SliderNormal data={normalRow1}/>
       </div>
 
       <div className="py-5">
-        <SliderNormal title= 'แนะนำสำหรับคุณ' data={normalRow2} />
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow2} />
       </div>
 
       <div className="py-5">
-        <SliderNormal title= 'แนะนำสำหรับคุณ' data={normalRow3} />
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow3} />
       </div>
 
       <div className="py-5">
-        <SliderNormal title= 'แนะนำสำหรับคุณ' data={normalRow4} />
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow4} />
       </div>
 
       <div className="py-5">
-        <SliderNormal title= 'แนะนำสำหรับคุณ' data={normalRow5} />
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow5} />
       </div>
       
-      <div>
-        <TopTenSlider />
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">รายการทีวี 10 อันดับสูงสุดในไทยวันนี้</p></div>
+        <TopTenSlider title="Top Ten" />
       </div>
 
     </div>

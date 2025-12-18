@@ -44,11 +44,11 @@ export default function TopTenSlider() {
   return (
     <div className="slider w-full flex flex-col mt-8 mb-8">
 
-      <div className="pl-[5%] mb-3">
+      {/* <div className="pl-[5%] mb-3">
         <p className="text-white">
           รายการทีวี 10 อันดับสูงสุดในไทยวันนี้
         </p>
-      </div>
+      </div> */}
 
       <div className="flex items-center gap-4">
 

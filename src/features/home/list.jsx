@@ -100,9 +100,25 @@ export default function list(){
                 ))}
                 </div>
             </div>
-
-            <div>
                 
+            <div id="previewModal" className=" ">
+                <div className="">
+                  <div className="กราด์ใหญ่ ใส่m-y">
+                    <div className="กล่องใน">
+                      <div className="กล่องคลุม ข้อมูล 1">
+                        <div className="ข้อมูล 2025/5 ซีซั่น/HD"></div>
+                      </div>
+
+                      <div className="กล่องคลุม ข้อมูล 2">
+                        <a href=""></a>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div></div>
             </div>
         </div>
     );
