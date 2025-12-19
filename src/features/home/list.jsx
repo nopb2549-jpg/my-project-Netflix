@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // img-heroll
 import img_heroll_Violet from "../../assets/img/Violetheroll.webp";
@@ -83,7 +83,7 @@ export default function list(){
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"/>
                             </svg>
-                            <span className="text-xs sm:text-sm md:text-base lg:text-lg"><NavLink to="#">เล่น</NavLink></span>
+                            <span className="text-xs sm:text-sm md:text-base lg:text-lg"><Link to="#">เล่น</Link></span>
                             </div>
                         </button>
                         <button className="btn flex flex-wrap justify-start gap-2 mt-2 px-4 py-2 flex-none border border-amber-50 bg-amber-50 text-gray-800 rounded-lg">
@@ -91,7 +91,7 @@ export default function list(){
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/>
                             </svg>
-                            <span className="text-xs sm:text-sm md:text-base lg:text-lg"><NavLink to="#">ข้อมูลเพิ่มเติม</NavLink></span>
+                            <span className="text-xs sm:text-sm md:text-base lg:text-lg"><Link to="#">ข้อมูลเพิ่มเติม</Link></span>
                             </div>
                         </button>
                         </div>
@@ -99,26 +99,6 @@ export default function list(){
                     </div>
                 ))}
                 </div>
-            </div>
-                
-            <div id="previewModal" className=" ">
-                <div className="">
-                  <div className="กราด์ใหญ่ ใส่m-y">
-                    <div className="กล่องใน">
-                      <div className="กล่องคลุม ข้อมูล 1">
-                        <div className="ข้อมูล 2025/5 ซีซั่น/HD"></div>
-                      </div>
-
-                      <div className="กล่องคลุม ข้อมูล 2">
-                        <a href=""></a>
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div></div>
             </div>
         </div>
     );
