@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function movies(){
   return(
 
-            <div className="w-full h-full border grid grid-cols-12 gap-8">{/* previewModal  กล่องคลุ่มเนื้อหา ซ้าย-ขวา ใช้ grid */}
-              <div className="col-span-8">{/* ซ้าย */}
+            <div className="w-full h-full border grid grid-cols-[2fr_1fr] gap-8">{/* previewModal  กล่องคลุ่มเนื้อหา ซ้าย-ขวา ใช้ grid */}
+              <div className="">{/* ซ้าย */}
                   <div className="my-5">{/* กล่องคลุมเนื้อหา ss-age ไม่ต้องปรับอะไร*/}
                       <div className="flex-start text-xl">{/* กล่องคลุมเนื้อหา ss */}
                         <div className="h-10 flex items-center w-full">{/* ss */}
@@ -48,21 +48,21 @@ export default function movies(){
                 </div>
               </div>
 
-              <div className="col-span-4 items-end flex-col ">{/* ขวา */}
-                <div className="my-[7px] mr-[7px]">{/*ข้อมูล (นักแสดง) */}
+              <div className=" items-end flex-col ">{/* ขวา */}
+                <div className="my-1.75 mr-1.75">{/*ข้อมูล (นักแสดง) */}
                   <span className="">นักแสดง: </span>
                   <Link><span className="">วิโนนา ไรเดอร์,</span></Link>{/* คนที่ 1 */}
                   <Link><span className="">เดวิด ฮาร์เบอร์,</span></Link>{/* คนที่ 2 */}
                   <Link><span className="">มิลลี่ บ็อบบี บราวน์,</span></Link>{/* คนที่ 3 */}
                   <span className="">เพิ่มเติม</span>
                 </div>
-                <div className="my-[7px] mr-[7px]">{/* ข้อมูล (แนว) */}
+                <div className="my-1.75 mr-1.75">{/* ข้อมูล (แนว) */}
                   <span className="">แนว: </span>
                   <Link><span className="">ทีวีดราม่า,</span></Link>
                   <Link><span className="">ทีวีไซไฟ,</span></Link>
                   <Link><span className="">รายการทีวีวัยรุ่น,</span></Link>
                 </div>
-                <div className="my-[7px] mr-[7px]">{/* รายการนี้ */}
+                <div className="my-1.75 mr-1.75">{/* รายการนี้ */}
                   <span className="">รายการนี้: </span>
                   <Link><span>บอกลางร้าย,</span></Link>
                   <Link><span>หวนคิดถึงอดีต,</span></Link>

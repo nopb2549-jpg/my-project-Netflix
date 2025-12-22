@@ -4,7 +4,7 @@ import List from './features/home/list'
 import Movie from './features/home/movies'
 import Game from './features/home/game'
 import TrendingNow from './features/home/trendingnow'
-import MyList from './features/home/my list'
+import MyList from './features/home/myList'
 import BrowseByLanguage from './features/home/browseByLanguage'
 // layouts
 import Navbar from './component/layouts/private/navbar'
