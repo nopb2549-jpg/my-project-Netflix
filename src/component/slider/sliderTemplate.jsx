@@ -7,7 +7,7 @@ export default function SliderTemplate({
 }) {
   return (
     //hidden
-    <div className=" w-full  overflow-hidden">
+    <div className=" w-full h-70  overflow-hidden">{/* เอา h-70 อกกหลังแก้เสร็จ */}
       <div
         className={`flex relative overflow-visible gap-4 ${
           isTransition

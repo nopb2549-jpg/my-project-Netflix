@@ -1,6 +1,4 @@
-
-
-export default function game(){
+export default function Header(){
     return(
         <div>
             
