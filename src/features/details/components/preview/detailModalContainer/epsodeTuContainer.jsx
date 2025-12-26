@@ -7,7 +7,7 @@ export default function EpisodeTuContainer({ season }) {
       <div className="mb-4">
         <span className="mr-2">{season.label}</span>
         <span className="border px-1.5">{season.age}</span>
-        <span className="ml-2">{season.category}</span>
+        {/* <span className="ml-2">{season.category}</span> */}{/* ระบบเรต */}
       </div>
 
       {/* ===== Episode list ===== */}
