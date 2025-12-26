@@ -1,12 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Tu from "./epsodeTuContainer"
 
+import Movie1Seasons from "../../../data/data season/movie1.seasons";
 
 export default function EpisodeContainer(){
     const [isOpen, setIsOpen] = useState(false);
     
-      const toggleDropdown = () => setIsOpen(!isOpen);
+    const [currentSeason, setCurrentSeason] = useState(Movie1Seasons[0].id);
+
+    const toggleDropdown = () => setIsOpen(prev => !prev);
+
+    const currentSeasonData = Movie1Seasons.find(
+        season => season.id === currentSeason
+    );
     return(
         <div className="mt-5 border">
         <div className="grid grid-cols-[2fr_1fr] gap-8 items-center">
@@ -20,7 +26,7 @@ export default function EpisodeContainer(){
                 <div className="border rounded-sm w-[70%]">
                     <div className="relative p-3">
                     {/* ปุ่ม toggle dropdown */}
-                    <button
+                    <button 
                         type="button"
                         aria-haspopup="true"
                         aria-expanded={isOpen}
@@ -48,60 +54,22 @@ export default function EpisodeContainer(){
 
                     {/* dropdown menu */}
                     {isOpen && (
-                        <ul className="dropdown-menu absolute right-0 mt-2 bg-gray-900 shadow-lg rounded max-w-xs w-auto z-10 border">
-                        <li>
-                            <Link
-                            to="#"
-                            className="block px-4 py-2 hover:bg-gray-600"
-                            onClick={() => setIsOpen(false)}
+                        <ul className="absolute right-0 mt-3 bg-gray-900 shadow-lg rounded max-w-xs w-auto z-10 border">
+                        {Movie1Seasons.map(season => (
+                            <li key={season.id}>
+                            <button
+                                type="button"
+                                className="block w-full text-left px-4 py-2 hover:bg-gray-600"
+                                onClick={() => {
+                                setCurrentSeason(season.id);
+                                setIsOpen(false);
+                                }}
                             >
-                            <span className="text-lg">สเตรนเจอร์ ธิงส์</span>{" "}
-                            <span>(8 ตอน)</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                            to="#"
-                            className="block px-4 py-2 hover:bg-gray-600"
-                            onClick={() => setIsOpen(false)}
-                            >
-                            <span className="text-lg">สเตรนเจอร์ ธิงส์2</span>{" "}
-                            <span>(9 ตอน)</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                            to="#"
-                            className="block px-4 py-2 hover:bg-gray-600"
-                            onClick={() => setIsOpen(false)}
-                            >
-                            <span className="text-lg">สเตรนเจอร์ ธิงส์3</span>{" "}
-                            <span>(8 ตอน)</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                            to="#"
-                            className="block px-4 py-2 hover:bg-gray-600"
-                            onClick={() => setIsOpen(false)}
-                            >
-                            <span className="text-lg">สเตรนเจอร์ ธิงส์4</span>{" "}
-                            <span>(9 ตอน)</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                            to="#"
-                            className="block px-4 py-2 hover:bg-gray-600"
-                            onClick={() => setIsOpen(false)}
-                            >
-                            <span className="text-lg">สเตรนเจอร์ ธิงส์5</span>{" "}
-                            <span>(4 ตอน)</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <hr />
-                        </li>
+                                <span className="text-lg">{season.label}</span>{" "}
+                                <span>({season.total} ตอน)</span>
+                            </button>
+                            </li>
+                        ))}
                         </ul>
                     )}
                     </div>
@@ -110,7 +78,7 @@ export default function EpisodeContainer(){
         </div>
 
         <div>
-            {Tu()}
+            <Tu season={currentSeasonData} />
         </div>
     </div>
     );

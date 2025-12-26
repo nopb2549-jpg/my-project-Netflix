@@ -28,7 +28,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    element: <Layout />, // ✅ Layout ใช้ร่วมกันทุกหน้า
+    element: <Layout />, // ใช้ร่วมกันทุกหน้า
     children: [
       { index: true, element: <Home /> }, // "/"
 

@@ -1,9 +1,5 @@
-import index from "../preview/detailModalContainer/index";
+import DetailModalContainer from "./detailModalContainer";
 
 export default function IndexPreview() {
-    return(
-        <>
-            {index()}
-        </>
-    );
+    return <DetailModalContainer />;
 }
