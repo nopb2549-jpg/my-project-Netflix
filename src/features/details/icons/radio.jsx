@@ -1,7 +1,7 @@
 export default function Radio(){
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+        <svg viewBox="0 0 24 24" width="35" height="35" data-icon="AudioDescriptionMedium" data-icon-id=":r45:" aria-hidden="true" class="default-ltr-iqcdef-cache-18tpq4v" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M21.978 7.52h.284A7.24 7.24 0 0 1 24 12.208a7.23 7.23 0 0 1-1.378 4.237h-1.056a6.6 6.6 0 0 0 1.555-4.237 6.64 6.64 0 0 0-1.96-4.688zM6.914 16.48h1.96V7.527H6.425L0 16.48h2.877l.755-1.184h3.282zm-2.051-3.05h2.063v-3.206zm7.439-3.807a2.38 2.38 0 0 1 2.382 2.382 2.383 2.383 0 0 1-2.382 2.385h-.623V9.623zm.242 6.851a4.48 4.48 0 0 0 4.477-4.47 4.46 4.46 0 0 0-4.456-4.476H9.799v8.95h2.745zM20.01 7.52h-1.1a6.64 6.64 0 0 1 1.96 4.688 6.6 6.6 0 0 1-1.555 4.237h1.049a7.2 7.2 0 0 0 1.385-4.237c0-1.728-.63-3.39-1.738-4.688m-2.536 0h.284a7.23 7.23 0 0 1 1.732 4.688 7.2 7.2 0 0 1-1.378 4.237h-1.05a6.62 6.62 0 0 0 1.548-4.237c0-1.759-.71-3.452-1.953-4.688z" clip-rule="evenodd"></path>
         </svg>
     );
 }

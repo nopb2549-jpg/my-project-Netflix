@@ -15,12 +15,12 @@ export default function list(){
     // heroll
       const slides = [
         {
-          img: img_heroll_Violet,
+          img: img_heroll_arcane,
           logo: Violet_black_logo,
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat animi incidunt rerum vitae! Error, possimus veritatis. Pariatur, architecto enim?",
         },
         {
-          img: img_heroll_arcane,
+          img: img_heroll_Violet,
           logo: Violet_black_logo,
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat animi incidunt rerum vitae! Error, possimus veritatis. Pariatur, architecto enim?",
         },
