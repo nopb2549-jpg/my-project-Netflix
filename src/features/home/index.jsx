@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SliderNormal from "../../component/slider/SliderNormal";
 import TopTenSlider from "../../component/slider/sliderTopten";
-import { Normal as Cardlist } from "../../data/normal";
+import { Normal as Cardlist } from "../../data/normal/strangerThings";
 
 // img-heroll
 import img_heroll_Violet from "../../assets/img/Violetheroll.webp";
@@ -20,6 +20,12 @@ const normalRow2 = Cardlist.slice(0, 11);
 const normalRow3 = Cardlist.slice(0, 11);
 const normalRow4 = Cardlist.slice(0, 11);
 const normalRow5 = Cardlist.slice(0, 11);
+// ส่วนที่ 2
+const normalRow6 = Cardlist.slice(0, 11);
+const normalRow7 = Cardlist.slice(0, 11);
+const normalRow8 = Cardlist.slice(0, 11);
+const normalRow9 = Cardlist.slice(0, 11);
+const normalRow10 = Cardlist.slice(0, 11);
 
 
 
@@ -68,7 +74,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-fixed bg-gray-950 w-full h-[550vh]">
+    <div className="bg-fixed bg-gray-950 w-full h-full">
 
       {/* heroll */}
       <div className="overflow-hidden w-full h-[300px] sm:h-[480px] md:h-[480px] lg:h-[620px] xl:h-[980px] relative">
@@ -141,6 +147,31 @@ export default function Home() {
       <div className="py-5">
         <div className="pl-[5%] mb-3"><p className="text-white">รายการทีวี 10 อันดับสูงสุดในไทยวันนี้</p></div>
         <TopTenSlider title="Top Ten" />
+      </div>
+
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow6} />
+      </div>
+
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow7} />
+      </div>
+
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow8} />
+      </div>
+
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow9} />
+      </div>
+
+      <div className="py-5">
+        <div className="pl-[5%] mb-3"><p className="text-white">แนะนำสำหรับคุณ</p></div>
+        <SliderNormal data={normalRow10} />
       </div>
 
     </div>

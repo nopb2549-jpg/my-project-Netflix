@@ -1,6 +1,6 @@
 // features/home/data.js
-import Sincantation from "../assets/img/incantation-heroll-proster.jpg"
-import n from "../assets/img/N-1.png"
+import Sincantation from "../../assets/img/incantation-heroll-proster.jpg"
+import n from "../../assets/img/N-1.png"
 
 export const Topten = [
   { id: 1, name: "topten1", imgN: n, img: Sincantation },

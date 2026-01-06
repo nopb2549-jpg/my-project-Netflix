@@ -7,7 +7,7 @@ export default function IconGroup(){
                 <div>
                     <Icon.radio />
                 </div>
-                <div>
+                <div className="flex items-center pt-1">
                     <Icon.description />
                 </div>
             </div>

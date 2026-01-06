@@ -1,15 +1,15 @@
 // row 1
-import list1 from '../assets/img/dark_card.png';
-import list2 from '../assets/img/busan.jpg';
-import list7 from '../assets/img/list-7.jpg';
-import list8 from '../assets/img/list-8.webp';
-import list9 from '../assets/img/list-9.png';
-import list10 from '../assets/img/list-10.webp';
-import list11 from '../assets/img/list-11.jpg';
-import list12 from '../assets/img/list-12.jpg';
-import list13 from '../assets/img/list-13.webp';
-import list14 from '../assets/img/list-14.jpg';
-import list15 from '../assets/img/list-15.webp';
+import list1 from '../../assets/img/dark_card.png';
+import list2 from '../../assets/img/busan.jpg';
+import list7 from '../../assets/img/list-7.jpg';
+import list8 from '../../assets/img/list-8.webp';
+import list9 from '../../assets/img/list-9.png';
+import list10 from '../../assets/img/list-10.webp';
+import list11 from '../../assets/img/list-11.jpg';
+import list12 from '../../assets/img/list-12.jpg';
+import list13 from '../../assets/img/list-13.webp';
+import list14 from '../../assets/img/list-14.jpg';
+import list15 from '../../assets/img/list-15.webp';
 
 export const Normal = [
     {

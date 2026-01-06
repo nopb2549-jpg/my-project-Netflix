@@ -14,7 +14,7 @@ export default function EpisodeContainer(){
         season => season.id === currentSeason
     );
     return(
-        <div className="mt-5 border">
+        <div className="mt-5">
         <div className="grid grid-cols-[2fr_1fr] gap-8 items-center">
             {/* ซ้าย */}
             <div className="mt-8 mb-4">

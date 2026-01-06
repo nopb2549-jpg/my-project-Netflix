@@ -1,6 +1,6 @@
 // features/home/TopTenSlider.jsx
 import { useEffect, useState } from "react";
-import { Topten } from "../../data/topten";
+import { Topten } from "../../data/topten/strangerThings";
 import TopTenCard from "../../component/card/cardTopten";
 import ControlsPrev from "./ControlsPrev";
 import ControlsNext from "./ControlsNext";
