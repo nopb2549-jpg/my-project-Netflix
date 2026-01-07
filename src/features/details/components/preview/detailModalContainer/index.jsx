@@ -1,7 +1,8 @@
 
 import MovieDetail from "./MovieDetail";
 import Episode from "./episodeContainer";
-import Card from "../../../card/card"
+import Card from "../../../card/normal/card";
+import CardTu from "../../../card/Series/card";
 import { movieDetailData } from "../../../data/movieDetail/movie1";
 
 export default function DetailModalContainer() {
@@ -10,6 +11,7 @@ export default function DetailModalContainer() {
       <MovieDetail data={movieDetailData} />
       <Episode />
       <Card />
+      <CardTu />
     </section>
   );
 }

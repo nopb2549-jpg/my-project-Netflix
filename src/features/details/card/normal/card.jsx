@@ -1,5 +1,5 @@
 import SeriesCard from "./seriesCard"
-import seriesList from "../data/seriesList/card1"
+import seriesList from "../../data/seriesList/card1"
 
 export default function CardCollection() {
   return (
@@ -13,7 +13,7 @@ export default function CardCollection() {
 
       {/* <div className="flex justify-center"> */}
         {/* <div className="w-[50%]"> */}
-          <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(18rem,1fr))]">
+          <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(18rem,18rem))]">
             {seriesList.map((item, index) => (
               <SeriesCard key={index} {...item} />
             ))}
